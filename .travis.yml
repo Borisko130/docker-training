@@ -1,0 +1,9 @@
+sudo: required
+services:
+  - docker
+
+before_install:
+  - docker build -t boryslavkrymeniuk/docker-training -f Dockerfile.dev .
+
+script:
+  - docker run boryslavkrymeniuk/docker-training npm run test -- --coverage
