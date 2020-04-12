@@ -1,1 +1,2 @@
 # docker-training
+ build:passed 
