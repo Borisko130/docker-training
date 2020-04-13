@@ -3,6 +3,9 @@ sudo: required
 branches:
   only:
   - master
+
+  except:
+  - feature
   
 services:
   - docker
